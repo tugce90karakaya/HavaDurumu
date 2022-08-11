@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     anaSinif= response.body();
                     if(anaSinif!=null){
                         sehirKodu.setText(anaSinif.getSys().getCountry());
-                        sehirAdi.setText(city);
+                        //sehirAdi.setText(city);
                         Float floatSicaklik = Float.valueOf(anaSinif.getMain_class().getTemp());
                         int intSicaklik=Math.round(floatSicaklik);
                         sicaklik.setText(""+ intSicaklik+"°C");
